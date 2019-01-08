@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Staatliches')
+
+body
+  max-width: 70%
+  margin: auto
+  margin-top: 15px
+  margin-bottom: 15px
+  color: #232323
+  font-family: 'Source Sans Pro', sans-serif
+  h1,h2,h3
+    font-family: 'Staatliches', cursive
+  hr
+    padding: 5px
+    background-color: #D4D4D4
+    border: none
+    border-radius: 25px
+
+
+.grid
+  margin: auto
+  display: grid
+  grid-template-columns: 64% 34%
+  grid-gap: 2%
+
+main
+  h1
+    text-align: right
+    font-size: 2.5em
+  h4
+    text-align: right
+    margin: -35px 0px
+    padding: 5px 0px 35px
+    color: #7951A8
+    font-size: 1.3em
+  h3
+    font-size: 1.6em
+  ul
+    li
+      margin: 5px 0px
+  a
+    text-decoration: inherit
+    color: inherit
+    transition: all 0.3s ease-in-out
+    &:hover
+      color: #7951A8
+      font-size: 1.1em
+
+
+
+.sidebar
+  background-color: #D4D4D4
+  border-radius: 25px
+  padding: 0 15px
+  text-align: center
+  font-weight: bolder
+  margin-top: 10px
+  h2
+    text-align: left
+    color: #7951A8
+    font-size: 1.5em
+  h4
+    text-align: left
+    font-size: 1.3em
+    margin-left: 1em
+    margin-bottom: 0
+  ul
+    text-align: left
+    margin-left: 1em
+  p
+    text-align: justify
+    padding: 0 1em
+    margin-left: 1em
+
+.skills-list
+  display: inline-block
+  //EI 7
+  zoom: 1
+  *display: inline
+
+
+@media print
+  body
+    font-size: 10pt
+    max-width: 100%
+    margin: 0
+
+  .skills-list
+    margin: 16px 0px
+    padding: 0
+
+  main
+  h1
+    font-size: 0.8em
+  h4
+    font-size: 0.6em
+  h3
+    margin: 0
+    font-size: 1em
+
+  .sidebar
+    h2
+      font-size: 1.3em
+    h4
+      font-size: 1.2em
