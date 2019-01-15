@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Oswald");
 body {
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 15px;
   color: #232323;
   font-family: "Source Sans Pro", sans-serif;
 }
-body h1, body h2, body h3 {
-  font-family: "Staatliches", cursive;
+body h1, body h2, body h3, body h5 {
+  font-family: "Oswald", sans-serif;
 }
 body hr {
   padding: 5px;
@@ -24,34 +24,50 @@ body hr {
   grid-gap: 2%;
 }
 
-main h1 {
+.main h1 {
   text-align: right;
   font-size: 2.5em;
 }
-main h4 {
+.main h4 {
   text-align: right;
   margin: -35px 0px;
   padding: 5px 0px 35px;
   color: #7951A8;
   font-size: 1.3em;
 }
-main h3 {
+.main h3 {
   font-size: 1.6em;
 }
-main ul li {
+.main ul li {
   margin: 5px 0px;
 }
-main a {
+.main a {
   text-decoration: inherit;
   color: inherit;
   transition: all 0.3s ease-in-out;
 }
-main a:hover {
+.main a:hover {
   color: #7951A8;
   font-size: 1.1em;
 }
+.main .academy {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 0.5em;
+}
+.main h5 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.main .summary li {
+  margin-bottom: 10px;
+}
+.main .work li {
+  margin-bottom: 11px;
+}
 
 .sidebar {
+  position: relative;
   background-color: #D4D4D4;
   border-radius: 25px;
   padding: 0 15px;
@@ -62,7 +78,7 @@ main a:hover {
 .sidebar h2 {
   text-align: left;
   color: #7951A8;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .sidebar h4 {
   text-align: left;
@@ -73,10 +89,17 @@ main a:hover {
 .sidebar ul {
   text-align: left;
 }
+.sidebar ul li {
+  margin-bottom: 10px;
+}
 .sidebar p {
   text-align: justify;
   padding: 0 1em;
   margin-left: 1em;
+}
+.sidebar .contact-info {
+  position: absolute;
+  bottom: 0;
 }
 
 .skills-list {
@@ -87,42 +110,18 @@ main a:hover {
 
 @media print {
   body {
-    font-size: 10pt;
+    font-size: 11px;
     max-width: 100%;
     margin: 0;
   }
 
   .skills-list {
-    margin: 16px 0px;
+    margin: 10px 0px;
     padding: 0;
   }
 
-  h1 {
-    font-size: 0.8em;
-  }
-
-  h4 {
-    font-size: 0.6em;
-  }
-
-  h3 {
-    margin: 0;
-    font-size: 1em;
-  }
-
-  .sidebar h2 {
-    font-size: 1.6em;
-  }
-  .sidebar h4 {
-    font-size: 1.3em;
-    margin-left: 0.2em;
-    margin-top: 0.2em;
-  }
-  .sidebar ul {
-    margin-left: 0;
-    padding-left: 13px;
-  }
-  .sidebar p {
-    margin-left: 0.2em;
+  div .sidebar {
+    display: block;
+    page-break-after: always;
   }
 }
