@@ -15,11 +15,10 @@ body
     border: none
     border-radius: 25px
 
-
 .grid
   margin: auto
   display: grid
-  grid-template-columns: 64% 34%
+  grid-template-columns: 60% 37%
   grid-gap: 2%
 
 .main
@@ -28,8 +27,8 @@ body
     font-size: 2.5em
   h4
     text-align: right
-    margin: -35px 0px
-    padding: 5px 0px 35px
+    margin: -2em 0em
+    padding: 0.5em 0em 2em
     color: #7951A8
     font-size: 1.3em
   h3
@@ -65,7 +64,7 @@ body
   padding: 0 15px
   text-align: center
   font-weight: bolder
-  margin-top: 10px
+  margin-top: 2.2em
   h2
     text-align: left
     color: #7951A8
@@ -86,24 +85,58 @@ body
   .contact-info
     position: absolute
     bottom: 0
+  .profiles
+    position: relative
+    top: 15px
+    .github
+      text-decoration: none
+      position: relative
+      padding-left: 25%
+      top: 10px
 
+      &:after
+        content: '\f09b'
+        font-family: fontAwesome
+        position: absolute
+        left: 0
+        top: -0.3em
+        color: black
+        font-size: 3em
+
+    .codepen
+      text-decoration: none
+      position: relative
+      padding-left: 25%
+      top: 40px
+
+      &:after
+        content: '\f1cb'
+        font-family: fontAwesome
+        position: absolute
+        left: 0
+        top: -0.3em
+        color: black
+        font-size: 2.8em
 
 .skills-list
   display: inline-block
   //EI 7
   zoom: 1
   *display: inline
-
+  margin-bottom: 0
 
 @media print
   body
     font-size: 11px
     max-width: 100%
     margin: 0
-  .skills-list
-    margin: 10px 0px
-    padding: 0
+
   div
     .sidebar
       display: block
       page-break-after: always
+
+@page
+  size: letter
+  zoom: 104%
+  margin: 0in 0.19in 0in 0.19in
